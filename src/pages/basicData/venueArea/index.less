@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  // background-color: #f1f1f1;
+  height: 100%;
+
+  .header {
+    flex: 0 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .content {
+    display: flex;
+    flex: 1 1 auto;
+
+    .aside {
+      min-width: 280px;
+      margin-right: 10px;
+      background-color: white;
+
+      :global .ant-tree .ant-tree-treenode-draggable .ant-tree-draggable-icon {
+        display: none;
+      }
+
+      :global .ant-tree-node-content-wrapper {
+        display: block;
+        max-width: 120px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .detail {
+      width: 100%;
+    }
+  }
+
+  :global .ant-empty {
+    margin-inline: 0px;
+  }
+
+  :global .ant-pro-card .ant-pro-card-body {
+    padding-inline: 0px;
+  }
+}

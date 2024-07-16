@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: row;
+
+  .aside {
+    flex-shrink: 0;
+    min-width: 280px;
+    margin-right: 10px;
+    :global .ant-tree .ant-tree-treenode-draggable .ant-tree-draggable-icon {
+      display: none;
+    }
+
+    :global .ant-tree-draggable-icon {
+      display: none;
+    }
+
+    :global .ant-tree-node-content-wrapper {
+      display: block;
+      max-width: 120px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    :global .ant-pro-card .ant-pro-card-body {
+      padding-inline: 0px;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .table {
+      flex-grow: 1;
+      overflow-x: auto;
+    }
+  }
+}

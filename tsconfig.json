@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./src/.umi/*"],
+      "@@test/*": ["./src/.umi-test/*"]
+    }
+  },
+  "include": [
+    "./**/*.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "config/defaultSettings.js",
+    "config/config.js",
+    "config/proxy.js",
+    "config/routes.js",
+    "src/components/index.js",
+    "src/components/RightContent/index.js",
+    "src/components/Footer/index.js",
+    "src/components/HeaderDropdown/index.js",
+    "src/access.js",
+    "src/components/RightContent/AvatarDropdown.js",
+    "src/app.jsx",
+    "jest.config.js"
+  ]
+}
